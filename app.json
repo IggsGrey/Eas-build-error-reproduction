@@ -1,0 +1,50 @@
+{
+	"expo": {
+		"name": "Wambobo",
+		"slug": "wambo",
+		"version": "1.0.0",
+		"description": "An attempt to reproduce the error with eas build when expo-updates is installed",
+		"scheme": "wambo",
+		"privacy": "hidden",
+		"primaryColor": "#2b509c",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "cover",
+			"backgroundColor": "#2b509c"
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"bundleIdentifier": "com.wambo.app",
+			"supportsTablet": true
+		},
+		"android": {
+			"package": "com.wambo.app",
+			"versionCode": 1
+		},
+		"androidStatusBar": {
+			"hidden": true
+		},
+		"plugins": [
+			["expo-notifications", {
+				"icon": "./assets/icon.png",
+				"color": "#2b509c",
+				"sounds": ["./assets/notification.wav"],
+				"mode": "production"
+			}],
+			["expo-image-picker", {
+				"photosPermission": "The app accesses your photos to let you share them with your friends."
+			}]
+		],
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"runtimeVersion": {
+			"policy": "sdkVersion"
+		},
+		"extra": {
+			"eas": {}
+		}
+	}
+}

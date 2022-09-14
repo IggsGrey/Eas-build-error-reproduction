@@ -1,0 +1,33 @@
+{
+	"cli": {
+		"version": ">= 0.49.0"
+	},
+	"build": {
+		"development": {
+			"developmentClient": true,
+			"distribution": "internal",
+			"env": {
+				"APP_VARIANT": "development"
+			}
+		},
+		"preview": {
+			"distribution": "internal",
+			"channel": "preview",
+			"android": {
+				"buildType": "apk"
+			},
+			"env": {
+				"APP_VARIANT": "development"
+			}
+		},
+		"production": {
+			"channel": "production",
+			"android": {
+				"buildType": "app-bundle"
+			}
+		}
+	},
+	"submit": {
+		"production": {}
+	}
+}
