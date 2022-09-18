@@ -1,64 +1,42 @@
 {
   "expo": {
-    "name": "Wambobo",
-    "slug": "wambo",
+    "name": "my-app",
+    "slug": "my-app",
     "version": "1.0.0",
-    "description": "An attempt to reproduce the error with eas build when expo-updates is installed",
-    "scheme": "wambo",
-    "privacy": "hidden",
-    "primaryColor": "#2b509c",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#2b509c"
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/72b4e9eb-0ca2-46f0-a99a-5901963b1bcd"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.wambo.app",
       "supportsTablet": true
     },
     "android": {
-      "package": "com.wambo.app",
-      "versionCode": 1,
-      "permissions": [
-        "android.permission.RECORD_AUDIO"
-      ]
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.iggs_grey.myapp"
     },
-    "androidStatusBar": {
-      "hidden": true
-    },
-    "plugins": [
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/icon.png",
-          "color": "#2b509c",
-          "sounds": [
-            "./assets/notification.wav"
-          ],
-          "mode": "production"
-        }
-      ],
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "The app accesses your photos to let you share them with your friends."
-        }
-      ]
-    ],
-    "updates": {
-      "fallbackToCacheTimeout": 0
+    "web": {
+      "favicon": "./assets/favicon.png"
     },
     "runtimeVersion": {
       "policy": "sdkVersion"
     },
     "extra": {
       "eas": {
-        "projectId": "5b24c9b2-603d-4283-8ef9-19c5fcc41c70"
+        "projectId": "72b4e9eb-0ca2-46f0-a99a-5901963b1bcd"
       }
     }
   }
